@@ -13,14 +13,15 @@ class PasswordEncoderTest {
     @InjectMocks
     private PasswordEncoder passwordEncoder;
 
+    //Lv 3. 테스트코드 연습 - 1
     @Test
     void matches_메서드가_정상적으로_동작한다() {
         // given
         String rawPassword = "testPassword";
         String encodedPassword = passwordEncoder.encode(rawPassword);
 
-        // when
-        boolean matches = passwordEncoder.matches(encodedPassword, rawPassword);
+        // when - matches 메서드의 파라미터 순서가 잘못
+        boolean matches = passwordEncoder.matches(rawPassword, encodedPassword);
 
         // then
         assertTrue(matches);
