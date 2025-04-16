@@ -14,7 +14,6 @@ public interface TodoRepository extends JpaRepository<Todo, Long> {
 
     // Lv 2. N+1 문제
     @EntityGraph(attributePaths = {"user"}) //JPQL 부분을 대신해주는 어노테이션 EntityGraph
-    /*@Query("SELECT t FROM Todo t LEFT JOIN FETCH t.user u ORDER BY t.modifiedAt DESC")*/
     Page<Todo> findAllByOrderByModifiedAtDesc(Pageable pageable);
 
     @Query("SELECT t FROM Todo t " +
