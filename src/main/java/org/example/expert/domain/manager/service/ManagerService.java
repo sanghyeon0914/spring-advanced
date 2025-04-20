@@ -36,10 +36,8 @@ public class ManagerService {
                 .orElseThrow(() -> new InvalidRequestException("Todo not found"));
 
         //todo의_user가_null인_경우_예외가_발생한다 - 유효성 검사
-        if(todo.getUser() == null){
-            throw new InvalidRequestException("일정을 만든 유저의 정보가 유효하지 않습니다.");
-        }
-        if (!ObjectUtils.nullSafeEquals(user.getId(), todo.getUser().getId())) {
+
+        if(todo.getUser() == null || !ObjectUtils.nullSafeEquals(user.getId(), todo.getUser().getId())){
             throw new InvalidRequestException("담당자를 등록하려고 하는 유저가 일정을 만든 유저가 유효하지 않습니다.");
         }
 
