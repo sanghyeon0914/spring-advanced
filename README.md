@@ -12,6 +12,6 @@ package org.example.expert.domain.todo.repository.TodoRepository
 Lv 3-1. package org.example.expert.config; 의 PassEncoderTest 클래스에 있는 matches_메서드가_정상적으로_동작한다()  
 
 Lv 3-2  
-	2-1. package org.example.expert.domain.manager.service; 의 ManagerServiceTest 의 클래스에 있는 manager_목록_조회_시_Todo가_없다면_NPE_에러를_던진다() 
+	2-1. package org.example.expert.domain.manager.service; 의 ManagerServiceTest 의 클래스에 있는 manager_목록_조회_시_Todo가_없다면_NPE_에러를_던진다()  
 	2-2. org.example.expert.domain.comment.service; 의 CommentServiceTest 의 클래스에 있는 comment_등록_중_할일을_찾지_못해_에러가_발생한다()  
 	2-3. org.example.expert.domain.manager.service의 ManagerServiceTest 클래스에 있는 todo의_user가_null인_경우_예외가_발생한다()  
