@@ -25,7 +25,7 @@ public class UserService {
 
     @Transactional
     public void changePassword(long userId, UserChangePasswordRequest userChangePasswordRequest) {
-        //dto에 작성 if문 생략
+        // Dto -> request -> UserChangePasswordRequest에 작성 if문 생략
 
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new InvalidRequestException("User not found"));
