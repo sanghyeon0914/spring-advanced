@@ -1,5 +1,5 @@
 # SPRING ADVANCED
-각 레벨별 개선한 부분이 어느 파일에 있는지 작성하라는 과제 발제 부분
+각 레벨별 개선한 부분이 어느 파일에 있는지 작성하라는 과제 발제 부분  
 Lv1-1. package org.example.expert.domain.auth.service; 의 AuthService 클래스에 있는 signup() 
 
 Lv1-2. package org.example.expert.client; 의 WeatherClient 클래스에 있는 getTodayWeather()  
